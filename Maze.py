@@ -71,12 +71,20 @@ if __name__ == "__main__":
                 
             elif grid[currentRow][currentCol] == WALL:
                 done = True
+<<<<<<< HEAD
                 print("you stumble badly into a solid concrete wall") # Hit wall.
+=======
+                print("you stumble blindly into a solid concrete wall") # Hit wall.
+>>>>>>> updating_messages
 
             elif grid[currentRow][currentCol] == END:
                 done = True
                 solved = True
+<<<<<<< HEAD
                 print('SOLVED!')#whatever this comment was
+=======
+                print("SOLVED!") # Solved.
+>>>>>>> updating_messages
                 
             else:
                 pass # Do nothing
@@ -86,7 +94,11 @@ if __name__ == "__main__":
 
 
     if not solved:
+<<<<<<< HEAD
         print("you have failed to escape. Future archaeologist gaze upon your remains in bafflement") # Did not reach the end.
+=======
+        print("you have failed to escape. Future archaeologists gaze upon your remains in bafflement") # Did not reach the end.
+>>>>>>> updating_messages
 
 
     GridViewer.view(grid)
