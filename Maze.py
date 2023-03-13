@@ -76,7 +76,7 @@ if __name__ == "__main__":
             elif grid[currentRow][currentCol] == END:
                 done = True
                 solved = True
-                print("MESSAGE 4") # Solved.
+                print("SOLVED!") # Solved.
                 
             else:
                 pass # Do nothing
@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
 
     if not solved:
-        print("MESSAGE 5") # Did not reach the end.
+        print("you have failed to escape. Future archaeologists gaze upon your remains in bafflement") # Did not reach the end.
 
 
     GridViewer.view(grid)
