@@ -66,28 +66,20 @@ if __name__ == "__main__":
             print("you fall into the chasm of doom") # Out of bounds.
             
         else:
-            if grid[currentRow][currentCol] == EMPTY:
-                grid[currentRow][currentCol] = VISITED
-                
-            elif grid[currentRow][currentCol] == WALL:
+            cell = grid[Row][Col]
+            if cell == EMPTY:
+                grid[Row][Col] = VISITED
+            elif cell == WALL:
                 done = True
-<<<<<<< HEAD
-                print("you stumble badly into a solid concrete wall") # Hit wall.
-=======
-                print("you stumble blindly into a solid concrete wall") # Hit wall.
->>>>>>> updating_messages
+                print('you stumble blindly into a solid concrete wall.')
 
-            elif grid[currentRow][currentCol] == END:
+            else cell == END:
                 done = True
                 solved = True
-<<<<<<< HEAD
-                print('SOLVED!')#whatever this comment was
-=======
-                print("SOLVED!") # Solved.
->>>>>>> updating_messages
-                
+                print('SOLVED!')
+
             else:
-                pass # Do nothing
+                pass #Do nothing
         
         charIndex += 1
     # end-while
